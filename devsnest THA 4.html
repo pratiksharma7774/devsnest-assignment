@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .clock {
+             width: 500px;
+             height: 500px;
+             display: inline-block;
+             padding: 20px;
+             background:;
+             border-radius: 50%;
+             border:5px solid;
+             position: absolute;
+             margin: auto;
+             top: 50px;
+             right: 50px;  
+             bottom: 50px; 
+             left: 50px;
+             box-shadow: 10px 2px 10px;
+             background-size: cover;
+         }  
+         div {
+             background-image: linear-gradient(to left,lime,#ff0099,gold,#99ff33,violet,#00ffff,blue,red,yellow,green,coral,#00ff99);
+
+         }
+         .second {
+             height: 250px;
+             width: 5px;
+             left: 245px;
+             background-color:red;
+             transform-origin: bottom;
+             transform: translate(-50%) rotate(110deg);
+
+         }
+        .minute {
+            height: 250px;
+            width: 10px;
+            left: 245.5px;
+            background: #000;
+            top: -250px;
+            transform: translateX(-50%) rotate(30deg);
+            transform-origin: bottom;
+            }
+         .Hours {
+             height: 180px;
+             width: 14px;
+             left: 240px;
+             background-color:black;
+             top: -430px;
+             
+         }
+         .clock::before {
+             content: '';
+             width: 25px;
+             height: 25px;
+             border-radius: 50%;
+             background-color:#000;
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             z-index: 999;
+            }
+            .second,.minute,.Hours{
+             line-height: 45px;
+             position: relative;
+             transform-origin: bottom;
+            }
+         
+</style>
+<body>
+    <div class="clock">
+        <div class="second"></div>
+        <div class="minute"></div>
+        <div class="Hours"></div>
+    </div>
+<body>
+    
+</body>
+</html>
